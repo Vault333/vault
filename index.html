@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault333Quiz ✨</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at top left, #1f004d, #000);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background: #8e2de2;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+        .navbar .dropdown {
+            position: relative;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4a00e0;
+            min-width: 120px;
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            color: #fff;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        @keyframes moveText {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(20px); }
+            100% { transform: translateX(0); }
+        }
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            background: linear-gradient(45deg, #8e2de2, #4a00e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 30px;
+            animation: moveText 5s infinite;
+        }
+        .start-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: #ff00cc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 20px #ff00cc;
+            transition: transform 0.3s;
+        }
+        .start-btn:hover {
+            transform: scale(1.1);
+        }
+        .zodiac-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .zodiac-btn {
+            padding: 30px;
+            background: #000;
+            border: 3px solid #ff00cc;
+            color: #00ffff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0 0 25px #ff00cc, 0 0 40px #8e2de2;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .zodiac-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 35px #00ffff, 0 0 55px #ff00cc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="dropdown">
+        Horoscopes
+        <div class="dropdown-content">
+            <a href="#">Daily</a>
+            <a href="#">Weekly</a>
+            <a href="#">Monthly</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        Numerology
+        <div class="dropdown-content">
+            <a href="#">Life Path</a>
+            <a href="#">Destiny</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        More
+        <div class="dropdown-content">
+            <a href="#">Psychics</a>
+            <a href="#">Love</a>
+        </div>
+    </div>
+</div>
+
+<h1>✨ Welcome to Vault333Quiz! ✨</h1>
+<button class="start-btn">✨ Start the Quiz ✨</button>
+
+<div class="zodiac-grid">
+    <button class="zodiac-btn">Aries</button>
+    <button class="zodiac-btn">Taurus</button>
+    <button class="zodiac-btn">Gemini</button>
+    <button class="zodiac-btn">Cancer</button>
+    <button class="zodiac-btn">Leo</button>
+    <button class="zodiac-btn">Virgo</button>
+    <button class="zodiac-btn">Libra</button>
+    <button class="zodiac-btn">Scorpio</button>
+    <button class="zodiac-btn">Sagittarius</button>
+    <button class="zodiac-btn">Capricorn</button>
+    <button class="zodiac-btn">Aquarius</button>
+    <button class="zodiac-btn">Pisces</button>
+</div>
+
+</body>
+</html>
